@@ -47,7 +47,7 @@ def ReplaceBrackets(imp):
 data["lemma_cleaned"] = data["lemma"].apply(ReplaceBrackets)
 data["token_cleaned"] = data["token"].apply(ReplaceBrackets)
 data["pos_cleaned"] = data["pos"].apply(ReplaceBrackets)
-#replace parenthesis
+#replace parentheses
 
 def SingleParenth(imp):
     return imp.replace("'", '')
