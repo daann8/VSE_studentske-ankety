@@ -100,7 +100,6 @@ dfforwcloudPositive.reset_index(inplace=True,drop = True)
 dfforwcloudPositive.set_index("word",inplace=True)
 
 dfforwcloudNegative = dftf_negative[dftf_negative["word"].isin(set(uniquenegativewords))]
-#some warning, fix it. --> df[df.index.isin(a_list) & df.a_col.isnull()]
 dfforwcloudNegative.reset_index(inplace=True,drop = True)
 dfforwcloudNegative.set_index("word",inplace=True)
 
